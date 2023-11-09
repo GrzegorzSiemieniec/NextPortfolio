@@ -76,7 +76,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col items-center font-Inter select-none max-w-full">
+    <main className="flex flex-col items-center font-Inter select-none max-w-full scrollbar-none">
       <div className="menu bg-gradient-to-r from-[#8121D0] via-[#5a2983] to-[#291C3A] w-full inline-flex h-24 my-auto">
         <Image
           src={yourImage}
