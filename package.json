@@ -14,10 +14,8 @@
     "framer-motion": "^10.16.4",
     "next": "14.0.1",
     "react": "^18",
-    "react-anime": "^4.1.1",
     "react-dom": "^18",
     "react-move": "^6.5.0",
-    "react-typing-animation": "^1.6.2",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
