@@ -47,34 +47,6 @@ export default function Home() {
     },
   };
 
-  const textFromRightAnimation: Variants = {
-    hide: {
-      opacity: 0,
-      x: 80,
-    },
-    show: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-      },
-    },
-  };
-
-  const textFromLeftAnimation: Variants = {
-    hide: {
-      opacity: 0,
-      x: -80,
-    },
-    show: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-      },
-    },
-  };
-
   const textFromLeftAnimationFooter: Variants = {
     hide: {
       opacity: 0,
@@ -83,6 +55,20 @@ export default function Home() {
     show: {
       opacity: 1,
       x: 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
+  const Skills: Variants = {
+    hide: {
+      opacity: 0,
+      y: 400,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
       transition: {
         duration: 0.8,
       },
@@ -152,7 +138,13 @@ export default function Home() {
         id="skills"
         className="skills h-28 bg-[#291C3A] w-full transition-transform transform pt-2"
       >
-        <p className=" flex items-center">
+        <motion.p
+          className=" flex items-center"
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={Skills}
+        >
           <span className="text-8xl font-bold mr-5 pl-24">7</span>
           <p className=" inline text-4xl items-center text-[#DCCFED]">
             <span>PROJECTS</span> <span className=" block">COMPLETED</span>
@@ -204,7 +196,7 @@ export default function Home() {
             width={70}
             height={70}
           />
-        </p>
+        </motion.p>
       </div>
       <div
         id="aboutme"
@@ -218,7 +210,7 @@ export default function Home() {
           initial="hide"
           whileInView="show"
           exit="hide"
-          variants={textFromLeftAnimation}
+          variants={Skills}
         >
           I am a enthusiast of Node.js family frameworks, <br />
           and I am capable of creating websites using technologies <br />
@@ -236,7 +228,7 @@ export default function Home() {
             initial="hide"
             whileInView="show"
             exit="hide"
-            variants={textFromRightAnimation}
+            variants={Skills}
           >
             <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white p-5">
               <Image
