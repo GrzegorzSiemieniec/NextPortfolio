@@ -216,12 +216,12 @@ export default function Home() {
           and I am capable of creating websites using technologies <br />
           such as Vue.js, React.js, Next.js(utilizing TypeScript). <br />
           I can also write programs in Node.js, <br />
-          but I'm more passionate about building websites :)
+          but I am more passionate about building websites :)
         </motion.p>
         <p className="text-[#291C3A] text-4xl font-bold mt-20 mb-12 float-right pr-24">
           My Skills
           <p className=" text-[#291C3A] text-3xl mt-10 mb-12 font-normal">
-            Technologies I've been working recently
+            Technologies I have been working recently
           </p>
           <motion.ul
             className=" inline-grid grid-cols-5 gap-5 my-auto mx-auto"
@@ -321,7 +321,7 @@ export default function Home() {
           My Projects
         </p>
         <p className=" text-[#291C3A] text-3xl pl-24 mt-10 mb-12">
-          Some Things I've build so far
+          Some Things I have build so far
         </p>
         <motion.div
           initial="hide"
